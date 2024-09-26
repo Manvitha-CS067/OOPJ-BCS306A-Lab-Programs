@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 class Stack {
     int top;
     int stk[] = new int[10];
@@ -7,20 +6,22 @@ class Stack {
     Stack() {
         top = -1;
     }
-
     void push(int item) {
         if (stk.length - 1 == top) {
             System.out.println("Stack overflow");
-        } else {
+        } 
+        else {
             top = top + 1;
             stk[top] = item;
         }
     }
 
     void pop() {
-        if (top == -1) {
+        if (top == -1) 
+        {
             System.out.println("Stack underflow");
-        } else {
+        } 
+        else {
             int item = stk[top];
             System.out.println("Item popped is: " + item);
             top = top - 1;
