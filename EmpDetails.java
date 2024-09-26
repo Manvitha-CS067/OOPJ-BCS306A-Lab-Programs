@@ -5,16 +5,22 @@ class Employee{
   public Employee(int id, String name,double salary){
     this.id=id;
     this.name=name;
-    this.salary=salary;}
+    this.salary=salary;
+  }
   public void raiseSalary(double percent){
     if(percent>0){
       double increment=salary*percent/100;
       salary=salary+increment;
-    System.out.println("New Salary: " +salary);}
+    System.out.println("New Salary: " +salary);
+    }
     else{
-      System.out.println("Salary: "+salary);}}
+      System.out.println("Salary: "+salary);
+    }
+  }
   public void getEmpDetails(){
-    System.out.println(name + " " + id + " "+ salary);}}
+    System.out.println(name + " " + id + " "+ salary);
+  }
+}
 
 public class EmpDetails{
   public static void main(String[] args){
@@ -23,6 +29,5 @@ public class EmpDetails{
 
     emp1.raiseSalary(10);
     emp1.getEmpDetails();
-
   }
 }
