@@ -1,26 +1,38 @@
 class Shape{
         public void draw() {
-                System.out.println("Drawing a shape");}
+                System.out.println("Drawing a shape");
+        }
         public void erase() {
-                System.out.println("Erasing a shape");}}
+                System.out.println("Erasing a shape");
+        }
+}
 class Circle extends Shape{
         @Override
         public void draw() {
-                System.out.println("Drawing a circle");}
+                System.out.println("Drawing a circle");
+        }
         public void erase() {
-                System.out.println("Erasing a circle");}}
+                System.out.println("Erasing a circle");
+        }
+}
 class Triangle extends Shape{
         @Override
         public void draw() {
-                System.out.println("Drawing a triangle");}
+                System.out.println("Drawing a triangle");
+        }
         public void erase() {
-                System.out.println("Erasing a triangle");}}
+                System.out.println("Erasing a triangle");
+        }
+}
 class Square extends Shape{
         @Override
         public void draw() {
-                System.out.println("Drawing a square");}
+                System.out.println("Drawing a square");
+        }
         public void erase() {
-                System.out.println("Erasing a square");}}
+                System.out.println("Erasing a square");
+        }
+}
 
 public class TestShape {
         public static void main(String[] args) {
@@ -31,4 +43,7 @@ public class TestShape {
                 for(int i=0;i<shapes.length;i++) {
                         shapes[i].draw(); //polymorphic method invocation
                         shapes[i].erase();
-                        System.out.println("------------");}}}
+                        System.out.println("------------");
+                }
+        }
+}
